@@ -1,0 +1,135 @@
+* {
+     box-sizing: border-box;
+}
+
+ body,html {
+     min-width: 300px;
+     min-height: 100vh;
+     font-family: Arial, Helvetica, sans-serif;
+     background-color: #110905;
+     color: white;
+     margin: 0;
+}
+
+/* Header/logo Title */
+ .header {
+     background-color:#000000;
+     text-color:#fff;
+     text-opacity-factor:0.7;
+     background-image: url('img/out.png');
+     background-size: cover;
+     background-position: center 30%;
+}
+
+ .blend{
+     padding: 15px;
+     width: 100%;
+     background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(8,3,1,255));
+}
+
+ .headerbox {
+     padding: 10px;
+     background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(8,3,1,255));
+}
+
+ .fakeimg{
+     border-radius: 20px;
+     background-color: rgba(0,0,0,0.4);
+     padding: 10px;
+     margin-bottom: 5px;
+}
+
+ .header h1 {
+     font-size: 40px;
+}
+
+ .header p {
+     font-size: 20px;
+}
+
+ .navbar {
+     width: 100%;
+     overflow: hidden;
+     position: sticky;
+     background-color: #080301;
+     top: 0;
+}
+
+/* Style the navigation bar links */
+ .navbar a {
+     float: left;
+     display: block;
+     text-align: center;
+     padding: 14px 20px;
+     color: #DDDDDD;
+     text-decoration: none;
+}
+
+/* Right-aligned link */
+ .navbar a.right {
+     float: right;
+}
+
+/* Change color on hover */
+ .navbar a:hover {
+     color: white;
+}
+
+/* Active/current link */
+ .navbar .active {
+     background-color: #2d120f;
+     border-radius:5px;
+}
+
+.page {
+     display: flex;
+     flex-wrap: wrap;
+}
+.centerpage{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+/* Column container */
+ .row {
+     background-image: url('img/teaser image.png');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+
+ .left {
+     flex: 30%;
+     padding: 20px;
+}
+
+ .content {
+     width: 100%;
+     padding: 20px;
+     border-radius: 20px;
+     background-color: rgba(26,5,4,0.8);
+}
+
+ .right {
+     flex: 70%;
+     padding: 20px;
+}
+
+ .footer {
+     padding: 20px;
+     text-align: center;
+     background-color: rgba(05,01,0,0.25);
+     width: 100%;
+}
+
+/* less than 700px wide */
+ @media screen and (max-width: 700px) {
+     .row {
+         flex-direction: column;
+    }
+
+    .centerpage{
+        width: 90%;
+    }
+}
