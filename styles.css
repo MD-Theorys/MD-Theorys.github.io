@@ -42,6 +42,7 @@ body,html{
     overflow:hidden;
     position:sticky;
     background-color:#080301;
+    border-radius:5px
     top:0
 }
 .navbar a{
@@ -51,6 +52,15 @@ body,html{
     padding:14px 20px;
     color:#ddd;
     text-decoration:none
+}
+.navbar a.right{
+    float:right
+}
+.navbar a:hover{
+    color:#fff
+}
+.navbar .active{
+    background-color:#2d120f;
 }
 .video-container {
   position: relative;
@@ -63,16 +73,6 @@ body,html{
   left: 0;
   width: 100%;
   height: 100%;
-}
-.navbar a.right{
-    float:right
-}
-.navbar a:hover{
-    color:#fff
-}
-.navbar .active{
-    background-color:#2d120f;
-    border-radius:5px
 }
 .page{
     display:flex;
