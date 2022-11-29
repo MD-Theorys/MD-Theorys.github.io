@@ -42,7 +42,6 @@ body,html{
     overflow:hidden;
     position:sticky;
     background-color:#080301;
-    border-radius:5px
     top:0
 }
 .navbar a{
@@ -50,6 +49,7 @@ body,html{
     display:block;
     text-align:center;
     padding:14px 20px;
+    border-radius:5px
     color:#ddd;
     text-decoration:none
 }
