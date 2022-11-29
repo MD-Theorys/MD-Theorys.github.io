@@ -1,135 +1,143 @@
-* {
-     box-sizing: border-box;
+*{
+    box-sizing:border-box
+}
+body,html{
+    min-width:300px;
+    min-height:100vh;
+    font-family:Arial,Helvetica,sans-serif;
+    background-color:#110905;
+    color:#fff;
+    margin:0
+}
+.header{
+    background-color:#000;
+    background-image:url('img/out.png');
+    background-size:cover;
+    background-position:center 30%
+}
+.blend{
+    padding:15px;
+    width:100%;
+    background-image:linear-gradient(to top,rgba(0,0,0,0),#080301)
+}
+.headerbox{
+    padding:10px;
+    background-image:linear-gradient(to bottom,rgba(0,0,0,0),#080301)
+}
+.frame{
+    border-radius:20px;
+    background-color:rgba(0,0,0,.4);
+    margin-bottom:5px;
+    height:280px
+}
+.header h1{
+    font-size:40px
+}
+.header p{
+    font-size:20px
 }
 
- body,html {
-     min-width: 300px;
-     min-height: 100vh;
-     font-family: Arial, Helvetica, sans-serif;
-     background-color: #110905;
-     color: white;
-     margin: 0;
+.navbar{
+    width:100%;
+    overflow:hidden;
+    position:sticky;
+    background-color:#080301;
+    top:0
 }
-
-/* Header/logo Title */
- .header {
-     background-color:#000000;
-     text-color:#fff;
-     text-opacity-factor:0.7;
-     background-image: url('img/out.png');
-     background-size: cover;
-     background-position: center 30%;
+.navbar a{
+    float:left;
+    display:block;
+    text-align:center;
+    padding:14px 20px;
+    color:#ddd;
+    text-decoration:none
 }
-
- .blend{
-     padding: 15px;
-     width: 100%;
-     background-image: linear-gradient(to top, rgba(0,0,0,0), rgba(8,3,1,255));
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
 }
-
- .headerbox {
-     padding: 10px;
-     background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(8,3,1,255));
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
-
- .fakeimg{
-     border-radius: 20px;
-     background-color: rgba(0,0,0,0.4);
-     padding: 10px;
-     margin-bottom: 5px;
+.navbar a.right{
+    float:right
 }
-
- .header h1 {
-     font-size: 40px;
+.navbar a:hover{
+    color:#fff
 }
-
- .header p {
-     font-size: 20px;
+.navbar .active{
+    background-color:#2d120f;
+    border-radius:5px
 }
-
- .navbar {
-     width: 100%;
-     overflow: hidden;
-     position: sticky;
-     background-color: #080301;
-     top: 0;
-}
-
-/* Style the navigation bar links */
- .navbar a {
-     float: left;
-     display: block;
-     text-align: center;
-     padding: 14px 20px;
-     color: #DDDDDD;
-     text-decoration: none;
-}
-
-/* Right-aligned link */
- .navbar a.right {
-     float: right;
-}
-
-/* Change color on hover */
- .navbar a:hover {
-     color: white;
-}
-
-/* Active/current link */
- .navbar .active {
-     background-color: #2d120f;
-     border-radius:5px;
-}
-
-.page {
-     display: flex;
-     flex-wrap: wrap;
+.page{
+    display:flex;
+    flex-wrap:wrap
 }
 .centerpage{
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
+    width:80%;
+    display:flex;
+    flex-wrap:wrap;
 }
-/* Column container */
- .row {
-     background-image: url('img/teaser image.png');
-     background-repeat: no-repeat;
-     background-position: center;
-     background-size: cover;
+.row{
+    background-image:url('img/teaser image.png');
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover
 }
-
- .left {
-     flex: 30%;
-     padding: 20px;
+.leftcontent{
+    flex:30%;
+    padding:20px
 }
-
- .content {
-     width: 100%;
-     padding: 20px;
-     border-radius: 20px;
-     background-color: rgba(26,5,4,0.8);
+.rightcontent{
+    flex:70%;
+    padding:20px
 }
-
- .right {
-     flex: 70%;
-     padding: 20px;
+.content{
+    width:100%;
+    padding:20px;
+    border-radius:20px;
+    background-color:rgba(26,5,4,.8)
 }
-
- .footer {
-     padding: 20px;
-     text-align: center;
-     background-color: rgba(05,01,0,0.25);
-     width: 100%;
+.content h2{
+    line-height:0.5;
 }
-
-/* less than 700px wide */
- @media screen and (max-width: 700px) {
-     .row {
-         flex-direction: column;
+.content h3{
+    line-height:0.2;
+}
+.video hr{
+    clear:both;
+    border:none;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.footer{
+    padding:20px;
+    text-align:center;
+    background-color:rgba(5,1,0,.25);
+    width:100%
+}
+@media screen and (max-width:700px){
+    .row{
+        flex-direction:column
     }
-
     .centerpage{
-        width: 90%;
+        width:90%
+    }
+}
+@media screen and (min-width : 1750px) {
+    .page{
+        max-width:1750px
+    }
+    .centerpage{
+        max-width:1500px
     }
 }
