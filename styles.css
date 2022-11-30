@@ -13,7 +13,7 @@ body,html{
     background-color:#000;
     background-image:url('img/out.png');
     background-size:cover;
-    background-position:center 30%
+    background-position:center 35%
 }
 .blend{
     padding:15px;
@@ -34,7 +34,8 @@ body,html{
     font-size:40px
 }
 .header p{
-    font-size:20px
+    font-size:20px;
+    line-height:6;
 }
 
 .navbar{
@@ -84,7 +85,7 @@ body,html{
     flex-wrap:wrap;
 }
 .row{
-    background-image:url('img/teaser image.png');
+    background-image:url('img/FMDhsm7WYAQINag.png');
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
@@ -102,7 +103,7 @@ body,html{
     width:100%;
     padding:20px;
     border-radius:20px;
-    background-color:rgba(26,5,4,.8)
+    background-color:rgba(40,57,85,.8)
 }
 .content h2{
     line-height:0.5;
