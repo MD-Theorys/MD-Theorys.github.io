@@ -87,8 +87,8 @@ body,html{
 .row{
     background-image:url('img/FMDhsm7WYAQINag.png');
     background-repeat:no-repeat;
-    background-position:center;
     background-size:cover;
+    background-position:center;
     min-height: 100vh
 }
 .leftcontent{
@@ -114,9 +114,11 @@ body,html{
 }
 .left{
     float:left;
+    text-align:left;
 }
 .right{
     float:right;
+    text-align:right;
 }
 .footer{
     padding:20px;
